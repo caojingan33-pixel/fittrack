@@ -1,5 +1,5 @@
 /* 训练日记 · 离线缓存 */
-var CACHE = 'fittrack-v2';
+var CACHE = 'fittrack-v3';
 var SHELL = [
   './',
   './index.html',
@@ -8,7 +8,9 @@ var SHELL = [
   './manifest.webmanifest',
   './icons/icon.svg',
   './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icons/icon-512.png',
+  './icons/icon-maskable-512.png',
+  './icons/apple-touch-icon.png'
 ];
 
 self.addEventListener('install', function (e) {
