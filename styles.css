@@ -30,6 +30,10 @@ html, body {
   color: var(--text);
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+  overscroll-behavior-y: contain;
 }
 
 .app {
@@ -498,6 +502,10 @@ button { font-family: inherit; cursor: pointer; }
   .card { padding: 15px 15px 16px; border-radius: 16px; }
   .hero-num strong { font-size: 44px; }
   .profile-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  /* iOS 在输入框字号 <16px 时会强行放大页面，这里统一 16px */
+  .field input, .field select { font-size: 16px; }
+  .field label { font-size: 11.5px; }
+  .seg-btn { font-size: 14px; }
 }
 
 @media (max-width: 460px) {
