@@ -1,5 +1,5 @@
 /* 训练日记 · 离线缓存 */
-var CACHE = 'fittrack-v1';
+var CACHE = 'fittrack-v2';
 var SHELL = [
   './',
   './index.html',
